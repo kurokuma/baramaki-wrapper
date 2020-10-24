@@ -52,7 +52,7 @@ class BaramakiAPIBase(object):
     
     def get_table(self, table, date, params):
         if date == "today":
-            date = datetime.now().date()
+            date = datetime.now()
 
         if (type(datetime.now()) != type(date)):
             print("date is 'today' or 'datetime.date' class")
