@@ -54,7 +54,7 @@ class BaramakiAPIBase(object):
         if date == "today":
             date = datetime.now().date()
 
-        if (type(datetime.now().date()) != type(date)):
+        if (type(datetime.now()) != type(date)):
             print("date is 'today' or 'datetime.date' class")
             exit(1)
 
