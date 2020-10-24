@@ -62,6 +62,6 @@ class BaramakiAPIBase(object):
         output = []
         for row in res:
             created_date = datetime.strptime(row["createdDate"], "%Y-%m-%d %H:%M:%S").date()
-            if created_date == date:
+            if created_date == date.date():
                 output.append(row)
         return output
